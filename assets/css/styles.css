@@ -1,0 +1,31 @@
+body {
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.img1 {
+    position: absolute;
+    z-index: 2;
+    animation: spin 1.5s linear infinite;
+}
+
+.img2 {
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
